@@ -72,5 +72,12 @@ By evaluating raw step changes in position arrays rather than trigonometric frac
 
 ## 📁 Repository Directory Layout
 ```directory
-├── bar4linkage.m  # Core closed-loop solver and animation script
-└── README.md              # Kinematic formulation and parameter documentation
+├── /CAD_Models/
+│   ├── 4link.SLDASM        # Main SolidWorks assembly mapping mechanical joint links
+│   ├── 4link.STEP          # Universal CAD format for cross-platform software integration
+│   ├── 100mmlink.SLDPRT    # Bounded Output Rocker link component
+│   ├── 160mmlink.SLDPRT    # Rigid base Ground link geometry component
+│   ├── 40mmlink.SLDPRT     # Fully rotating input Driving Crank link component
+│   └── Part1.SLDPRT        # Base plate / Support fixture geometry
+├── four_bar_kinematics.m   # Core closed-loop vector solver and animation script
+└── README.md               # Kinematic formulation and parameter documentation
